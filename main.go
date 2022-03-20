@@ -22,7 +22,7 @@ func initDatabase() {
 	if err != nil {
 		panic("Failed to connect to DB")
 	}
-	fmt.Println("Connected openend to Database")
+	fmt.Println("Connection openend to Database")
 	database.DBConn.AutoMigrate(&lead.Lead{})
 	fmt.Println("Database Migrated")
 }
